@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 0.9375rem;
+  font-family: "Poppins", sans-serif;
+  background-color: #fafafa;
+}
+
+.container {
+  margin: 5.125rem 1.9375rem;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.heading span {
+  display: block;
+  opacity: 0.7;
+}
+
+.heading__title {
+  margin-bottom: 0.8125rem;
+  line-height: 2.375rem;
+  font-size: 1.5625rem;
+}
+
+.heading__title-main {
+  font-weight: 300;
+}
+
+.heading__description {
+  font-size: 1rem;
+  opacity: 0.9;
+  line-height: 1.5625rem;
+  color: #a3a5ae;
+}
+
+.cards__box {
+  padding: 1.375rem 1.6875rem;
+  margin-bottom: 1.75rem;
+  position: relative;
+  max-width: 22.1875rem;
+  height: 13.6875rem;
+  border-radius: 0.3125rem;
+}
+
+.cards__heading {
+  font-size: 1.25rem;
+  margin-bottom: 0.3125rem;
+  opacity: 0.7;
+}
+
+.cards__description {
+  font-size: 0.8125rem;
+  color: #a3a5ae;
+  opacity: 0.8;
+  line-height: 1.375rem;
+  letter-spacing: 0.0125rem;
+}
+
+.cards__icon {
+  max-width: 3.5625rem;
+  position: absolute;
+  right: 1.6875rem;
+  bottom: 1.5625rem;
+}
+
+.cards__icon img {
+  width: 100%;
+}
+
+.cards--one {
+  box-shadow: 0 -4px 0 #45d3d3, 0.3125rem 0.9375rem 1.25rem rgba(131, 172, 172, 0.3);
+}
+
+.cards--two {
+  box-shadow: 0 -4px 0 #ea5353, 0.3125rem 0.9375rem 1.25rem rgba(131, 172, 172, 0.3);
+}
+
+.cards--three {
+  box-shadow: 0 -4px 0 #fcaf4a, 0.3125rem 0.9375rem 1.25rem rgba(131, 172, 172, 0.3);
+}
+
+.cards--four {
+  box-shadow: 0 -4px 0 #549ef2, 0.3125rem 0.9375rem 1.25rem rgba(131, 172, 172, 0.3);
+}
+
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+@media (min-width: 31.25rem) {
+  .container {
+    margin: 5.5rem;
+  }
+  .heading {
+    max-width: 32rem;
+    margin: 4.25rem auto;
+  }
+  .heading__title {
+    font-size: 1.8125rem;
+    margin-bottom: 1.375rem;
+  }
+  .cards {
+    max-width: 69.75rem;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "b1 b2"
+  "b3 b4";
+    grid-column-gap: 1.6875rem;
+  }
+  .cards--one {
+    grid-area: b1;
+  }
+  .cards--two {
+    grid-area: b2;
+  }
+  .cards--three {
+    grid-area: b3;
+  }
+  .cards--four {
+    grid-area: b4;
+  }
+}
+
+@media (min-width: 56.25rem) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "b1 b2 b4" 
+  "b1 b3 b4";
+  }
+  .cards__box {
+    height: 15.625rem;
+    padding: 2rem;
+  }
+  .cards--one, .cards--four {
+    align-self: center;
+  }
+}

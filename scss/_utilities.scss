@@ -1,0 +1,25 @@
+@mixin box-format {
+    padding: 1.375rem 1.6875rem;
+    margin-bottom: 1.75rem;
+    position: relative;
+    max-width: 22.1875rem; 
+    height: 13.6875rem;
+    border-radius: 0.3125rem;
+}
+
+@mixin shadow-color($color) {
+    box-shadow: 0 -4px 0 $color, 0.3125rem 0.9375rem 1.25rem rgba(131, 172, 172, 0.3);
+}
+
+
+@mixin larger-than($breakpoint) {
+    min-width: 31.25rem;
+}
+
+@mixin attribution {
+    font-size: 0.6875rem;
+    text-align: center;
+    a {
+        color: hsl(228, 45%, 44%);
+    }
+}
